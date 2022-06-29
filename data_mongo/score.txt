@@ -1,0 +1,42 @@
+[
+    {
+      "code": "KTTK-CN",
+      "point": 6.7,
+	"studentId" : "B18CN284",
+      "subjectName": "Thiết kế kiến trúc phần mềm",
+	"semesterName": 8,
+	"isUpdate":false
+    },
+    {
+      "code": "HDT-CN",
+      "point": 7.2,
+	"studentId" : "B18CN284",
+      "subjectName": "Hướng dịch vụ",
+	"semesterName": 8,
+	"isUpdate":false
+    },
+    {
+      "code": "DBCL-CN",
+      "point": 7.5,
+	"studentId" : "B18CN284",
+      "subjectName": "Đảm bảo chất lượng phần mềm",
+	"semesterName": 8,
+	"isUpdate":false
+    },
+    {
+      "code": "TBDD-CN",
+      "point": 6.9,
+	"studentId" : "B18CN284",
+      "subjectName": "Thiết bị di động",
+	"semesterName": 8,
+	"isUpdate":false
+    },
+	{
+      "code": "TBDD-CN",
+      "point": 6.8,
+	"studentId" : "B18CN200",
+      "subjectName": "Thiết bị di động",
+	"semesterName": 8,
+	"isUpdate":false
+    }
+  ]

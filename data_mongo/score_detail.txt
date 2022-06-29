@@ -1,0 +1,10 @@
+[
+    {
+      "code": "CDCN1",
+      "point": 7.6,
+	"studentId" : "B18CN284",
+      "subjectName": "Công nghệ phần mềm ",
+	"semesterName": 8,
+	"isUpdate" : true
+    }
+  ]

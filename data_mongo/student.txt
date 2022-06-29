@@ -1,0 +1,35 @@
+[
+    {
+      "code": "B18CN284",
+      "fullName": "Nguyễn Khánh Hưng",
+      "gender": "Nam",
+      "address": "Thái Bình",
+	"birth" : "2000-03-21",
+	"email" : "hungkhanh2103@gmail.com",
+	"password" : "$2b$10$SA1tTvVSoEYUGBVmgMwOsu0f2WfNecO7hr05iQK1SkI9vS9zdhZ/e",
+	"isValidation" : false,
+	"isActive" : false
+    },
+    {
+      "code": "B21CN114",
+      "fullName": "Võ Thị Thanh Phương",
+      "gender": "Nữ",
+      "address": "Hải Phòng",
+	"birth" : "2003-12-21",
+	"email" : "hungkhanh2103@gmail.com",
+	"password" : "$2b$10$uRpuqdnNlTLMWnWqohwKRuVb6OBbstzVoNH5sAGCcdIpKTXTdLe9W",
+	"isValidation" : false,
+	"isActive" : false
+    },
+    {
+      "code": "B20CN124",
+      "fullName": "Nguyễn Thái Tuấn Anh",
+      "gender": "Nam",
+      "address": "Hà Nội",
+	"birth" : "2002-01-14",
+	"email" : "hungkhanh2103@gmail.com",
+	"password" : "$2b$10$vV8UjEX7ipUbGD5eJW5qiuKKgL9D77.M0PDKW.gr.A6PF6Zth10YC",
+	"isValidation" : false,
+	"isActive" : false
+    }
+  ]
