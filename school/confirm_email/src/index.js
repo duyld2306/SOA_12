@@ -1,28 +1,19 @@
-const express = require("express"); //thư viện được cài
+const express = require("express");
+const cors = require("cors");
 require("dotenv").config();
-const app = express(); //() toán tử call
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-const path = require("path");
-
 const route = require("./routes");
 
-const cors = require("cors");
+const app = express();
+const path = require("path");
 
-//Connect to DB
+app.use(express.static(path.join(__dirname, "/public")));
 
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, "/public")));
-// //xu ly form
-// app.use(express.urlencoded())
-// //xu ly data
-// app.use(express.json())
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //routes init
 route(app);
-
-// 127.0.0.1 - localhost ánh xạ
 
 app.listen(process.env.PORT || 8006);

@@ -1,13 +1,8 @@
 const express = require("express");
-const router = express.Router();
-
 const sendEmailController = require("../app/controllers/SendEmailController");
 
-// newController.index
+const router = express.Router();
 
-// router.post('/create', dataController.createPosition)
-// router.delete('/delete/:id',newController.delete)
-// router.get('/:userId',newController.getUser)
 router.get("/request_scores/:accessToken", sendEmailController.requestScore);
 router.get("/default_scores", sendEmailController.defaultScore);
 router.get("/scores/:accessToken", sendEmailController.emailScore);

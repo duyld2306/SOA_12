@@ -2,12 +2,8 @@ const axios = require("axios");
 const nodemailer = require("nodemailer");
 
 class ConfirmController {
-  //[Get] getData
   async confirmationEmail(req, res) {
-    // res.json(req.params)
-
     const result = await axios.get(process.env.API_VERIFY_TOKEN + accessToken);
-    // return res.json(result.data)
 
     if (result.data.student.isValidation) {
       const scores = await axios.get(
@@ -53,9 +49,6 @@ class ConfirmController {
         html: message,
       });
 
-      // create template renderer
-      // const templates = new EmailTemplates();
-
       transporter.sendMail(info, function (err, infomation) {
         if (err) {
           console.log(err);
@@ -67,10 +60,6 @@ class ConfirmController {
     }
     return res.json(result.data);
   }
-
-  // async createPosition (req, res ){
-  //     res.json("abc")
-  // }
 }
 
 module.exports = new ConfirmController();

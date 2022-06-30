@@ -2,7 +2,6 @@ const axios = require("axios");
 const jwt = require("jsonwebtoken");
 
 class AuthController {
-  //[Get] getData
   async signToken(req, res) {
     if (req.body.confirm) {
       const student = await axios.post(
@@ -22,7 +21,6 @@ class AuthController {
       }
     } else {
       const student = await axios.post(process.env.API_GET_STUDENT, req.body);
-      // res.json(student.data)
 
       if (student.data.success) {
         const accessToken = jwt.sign(
@@ -42,7 +40,6 @@ class AuthController {
 
   async verifyToken(req, res) {
     const { accessToken } = req.params;
-    // res.json(req.body)
     try {
       const decoded = jwt.verify(accessToken, process.env.ACCESS_TOKEN_SECRET);
       const student = await axios.get(
@@ -52,7 +49,6 @@ class AuthController {
     } catch (err) {
       res.json(err);
     }
-    // const user = await User.findOne({_id : decoded.userID})
   }
 }
 
